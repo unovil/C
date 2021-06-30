@@ -1,18 +1,23 @@
 # IF
+
 - C provides decision-making capability in form of if statement
-```
+
+```ts
 if ( expression )
     program statement
 ```
 
 - For example, translating "If it is hot, I'll go swimming" is easy
-```
+
+```ts
 if ( it is sunny )
     i'll go swimming
 ```
+
 - curly brackets are needed for compound statements inside the if block
 
 ## Example
+
 ```c
 int score = 95;
 int big = 90;
@@ -27,18 +32,25 @@ if (score > big)
     printf("You win\n");
 }
 ```
-![](https://www.alphacodingskills.com/java/img/java-if.png)
+
+![decision tree](https://www.alphacodingskills.com/java/img/java-if.png)
+
 # IF ELSE
+
 - C can also execute a code block when the condition is false
 - the `else` block is optional; it can be not used
+
 ```c
 if (expression)
     Statement;
 else
     Other statement
 ```
-![](https://www.guru99.com/images/r_programming/032818_1241_IFELSEELIF1.png)
+
+![another decision tree](https://www.guru99.com/images/r_programming/032818_1241_IFELSEELIF1.png)
+
 ## Example
+
 ```c
 #include <stdio.h>
 
@@ -61,9 +73,12 @@ int main()
     return 0;
 }
 ```
+
 # ELSE IF
+
 - adds another layer of questioning
 - like `elif` of Python
+
 ```c
 if (expression1)
     statement1
@@ -72,8 +87,11 @@ else if (expression2)
 else
     statement3
 ```
-![](https://i0.wp.com/code4coding.com/wp-content/uploads/2018/04/ifinpython.jpg?resize=467%2C413&ssl=1)
+
+![decision tree with else if](https://i0.wp.com/code4coding.com/wp-content/uploads/2018/04/ifinpython.jpg?resize=467%2C413&ssl=1)
+
 ## Example
+
 ```c
 // What's the sign of a number?
 #include <stdio.h>
@@ -94,8 +112,11 @@ int main() {
     printf("The sign of %i is %i.\n", number, sign)
 }
 ```
+
 - As shown in the diagram, if the `if` statement is true already, it executes the codeblock in that `if` and continues, even if the `elif` statement is true
+
 ## Example
+
 ```c
 int main() {
     // suppose number is 9
@@ -110,8 +131,11 @@ int main() {
     return 0;
 }
 ```
+
 # NESTED IF-ELSE
+
 - any `if` statements inside another `if` will be conditioned only when first `if` is true
+
 ```c
 if (bool)
 {
@@ -123,6 +147,7 @@ if (bool)
     }
 }
 ```
+
 ```c
 enum player {YOU, ME};
 enum player playerToMove;
@@ -134,12 +159,15 @@ if (gameIsOver == 0) // false
 else // true
     printf("The game is over!");
 ```
+
 # Conditional Operator (ternary operator)
+
 - unique as it is the only operator to take 3 operands
 - logical condition is before `?`
 - statement when value is true is the second statement
 - statement when value is false is the third statement
 - can only take one expression
+
 ```c
 x = y > 7 ? 25 : 50;
 
@@ -149,5 +177,6 @@ if (y > 7)
 else
     x = 50;
 ```
+
 - a bit confusing to read, but basically it's an assignment
-    - if `y` is greater than 7, then `x` is assigned a value of 25, otherwise it's assigned 50
+  - if `y` is greater than 7, then `x` is assigned a value of 25, otherwise it's assigned 50

@@ -1,9 +1,12 @@
 # Variable-Length Arrays
+
 - so far, all sizes of an array have been specified using a number
 - 'variable' in variable-length array does not mean you can modify length of array after creating it
-    - VLA keeps same size after creation
+  - VLA keeps same size after creation
 - introduced in C99
+
 # Valid and Invalid Declarations
+
 ```c
 int n = 5;
 

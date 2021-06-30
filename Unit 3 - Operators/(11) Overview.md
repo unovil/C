@@ -1,32 +1,44 @@
-# Overview
+# Expressions and Statements
+
+## overview
+
 * operators are functions that have symbolic name
 * they perform math or logic operations
 * operators are predefined in C, and most tend to be in the middle of two data
 
 logical operator
-- also a "Boolean operator"
-- returns Boolean result based on one or two other expressions
+
+* also a "Boolean operator"
+* returns Boolean result based on one or two other expressions
 
 arithmetic operator
-- math function takes two operands and performs calculation
+
+* math function takes two operands and performs calculation
 
 other operators
-- assignment (`=`), relations (`<, >, !=, ==`), bitwise (`<<, >>, ~`)
 
-# Expressions and Statements
+* assignment (`=`), relations (`<, >, !=, ==`), bitwise (`<<, >>, ~`)
+
+## main
+
 Statements
-- basic program steps of C
-- most are constructed from expressions
+
+* basic program steps of C
+* most are constructed from expressions
 
 Expressions
-- a combination of operators and operands
-    - operands are what operator operates on
-    - operands can be constants, variables, or combination
-    - every expression has a value
+
+* a combination of operators and operands
+  * operands are what operator operates on
+  * operands can be constants, variables, or combination
+  * every expression has a value
 
 ## Types of Statements
+
 Simple Statement
-- ends in semicolon `;`
+
+* ends in semicolon `;`
+
 ```c
 int Miguel; // declaration
 Miguel = 5; // assignment
@@ -36,7 +48,8 @@ return 0; // return
 ```
 
 Compound Statement
-- two or more statements grouped by braces (block)
+
+* two or more statements grouped by braces (block)
 
 ```c
 int index = 0;

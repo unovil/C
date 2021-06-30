@@ -1,9 +1,9 @@
 # Control Flow
-- statements inside source files are usually executed from top to bottom, line per line
-    - known as sequential flow
-- control flow statements beak up flow by asking for decisions, looping, and branching
-    - enables program to conditionally execute certain blocks
 
+- statements inside source files are usually executed from top to bottom, line per line
+  - known as sequential flow
+- control flow statements beak up flow by asking for decisions, looping, and branching
+  - enables program to conditionally execute certain blocks
 
 | Type | Examples|
 | :----: | :------ |
@@ -12,11 +12,12 @@
 | Branching | break <br> continue <br> return
 
 # Decision Making
-- sturctures that specify one or more conditions to be tested
-    - if condition is true, statement/s are executed
-    - if not, other statements are executed or nothing executes
 
-![](https://www.educative.io/api/edpresso/shot/5593231642329088/image/6209099250270208)
+- sturctures that specify one or more conditions to be tested
+  - if condition is true, statement/s are executed
+  - if not, other statements are executed or nothing executes
+
+![picture showing decision tree](https://www.educative.io/api/edpresso/shot/5593231642329088/image/6209099250270208)
 
 | Statement | Description
 | :--: | :----
@@ -25,15 +26,16 @@
 | nested `if` | you can use `if` and `else if` statements inside other conditionals
 
 # Repeating Code
+
 - there are situations where a block of code needs to be executed a number of times
-    - statements are executed sequentially; first statement in function is executed first, then second, and so on
+  - statements are executed sequentially; first statement in function is executed first, then second, and so on
 
 - loop statement can execute a number of times according to boolean
 - when execution leaves scope, all automatic objects are destroyed
 - loop is infinite if condition never is false
-    - `for` is usually used for that
+  - `for` is usually used for that
 
-![](https://study.com/cimages/multimages/16/cb730cff-275e-4ff8-92c1-a309f5d1ff41_c_loop_flow.png)
+![picture showing decision tree of repeating code](https://study.com/cimages/multimages/16/cb730cff-275e-4ff8-92c1-a309f5d1ff41_c_loop_flow.png)
 
 | Statement | Description
 | :--: | :----

@@ -1,18 +1,26 @@
-# Bitwise
+# Bitwise Operators
+
+## Bitwise
+
 C offers bitwise logical and shift operators
+
 * look like logical operators, but different
 * operate on bits in integer values
-* not used commonly <br>
+* not used commonly
 
 One major use of bitwise AND `&` and bitwise OR `|` is to test and set individual bits in integer variable
+
 * can use bits to store data
 
 You could use single integer var to store many characteristics of person, like
+
 * whether male or female
 * to specify what the person speaks
 * another to record the salary
 * in four bits you can have a set of data recorded
-# Binary Numbers
+
+## Binary Numbers
+
 * a number that includes only one and zero
 * could be of any length
 
@@ -24,7 +32,8 @@ You could use single integer var to store many characteristics of person, like
 | 11 1111| 63 |
 | 111 1111 1111 1000 | 32 760 |
 
-# Bitwise Operators
+## Operators
+
 | Symbol | Meaning |
 | :----: | :------ |
 | `&` | bitwise AND, takes two operands and does AND on every bit pair, returns 1 in the final result if both are 1

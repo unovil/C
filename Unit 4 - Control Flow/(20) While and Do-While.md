@@ -1,10 +1,14 @@
 # While
+
 - repeat set of statements as long as a logical expression is true
-```
+
+```txt
 while this condition is true
     keep doing this
 ```
+
 ## Syntax
+
 ```c
 while (expression)
     statement;
@@ -18,14 +22,19 @@ while (expression)
     ...
 }
 ```
+
 - `expression` is tested at start of loop
-    - if it starts out false, no statements are executed
+  - if it starts out false, no statements are executed
 - if `expression` starts as true, while loop must have mechanism to make this false after a certain amount of iterations
-    - otherwise you get infinite loop
+  - otherwise you get infinite loop
+
 ## Example
+
 Counter Controlled
+
 - this has a set number of iterations
 - so long as you don't change the code, the count is always the same
+
 ```c
 #include <stdio.h>
 
@@ -43,8 +52,10 @@ int main (void)
 ```
 
 Logic Controlled
+
 - the numebr of iterations vary (according to logic)
 - even by not changing code, count can be different each time
+
 ```c
 #include <stdio.h>
 
@@ -62,12 +73,14 @@ int main (void)
 ```
 
 # Do...while
+
 - in a while loop, body executes while condition is true
 
 - do-while loop executes body for first time unconditionally
-    - guaranteed to execute at least once
-    - condition is at bottom
+  - guaranteed to execute at least once
+  - condition is at bottom
 - after initial execution, body executes while condition is true (like normal)
+
 ```c
 do
 {
@@ -77,8 +90,11 @@ do
 }
 while (expression);
 ```
+
 ## Examples
+
 Counter controlled
+
 ```c
 int number = 0;
 
@@ -90,6 +106,7 @@ while (number < 4);
 ```
 
 Logic Controlled
+
 ```c
 do
     scanf("%d", &number);
@@ -97,6 +114,7 @@ while (number != 20);
 ```
 
 # Which loop to use?
+
 1. Decide whether you need pre or post loop
     - usually will be pre test loop (`for` or `while`)
     - better to look before you "loop" (eehhehehehe)
@@ -104,6 +122,7 @@ while (number != 20);
     - important usually that loop be skipped if test is not initially met
 2. It's a matter of taste in switching between `for` and `while`
     - you can omit first and third expressions for the `for` parameters to make it a `while` loop
+
         ```c
         for (;test;)
 
@@ -111,7 +130,9 @@ while (number != 20);
 
         while (test)
         ```
+
     - prefacing an initialization and including updates to `while` will make it like `for`
+
         ```c
         initialization_statement; // like int x;
         while (test)

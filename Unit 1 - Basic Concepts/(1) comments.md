@@ -6,11 +6,14 @@
 * ignored by the compiler
 
 ## Situations where comments can be useful
+
 1. A programmer can return to a program he/she coded a long time ago and can still remember the purpose of a particular line of code
 2. Not needing to re-understand the code, which saves a **lot** of time
 
 ## Syntax
+
 There are **two** ways to add comments to a C program
+
 1. using `/*`
     * marks start of comment
     * needs to be terminated
@@ -22,6 +25,7 @@ There are **two** ways to add comments to a C program
     * known as a *single line comment*
 
 For example:
+
 ```c
 /* This is a multi-line comment.
 Everything is part of this.
@@ -34,7 +38,9 @@ int main() {
 ```
 
 ## Style
+
 You can use this for showing who you are
+
 ```c
 /*
 Author: Uno Villegas
@@ -42,7 +48,9 @@ Purpose: to do something
 Date: 2020
 */
 ```
+
 You can also embellish comments to make them 'urgent'
+
 ```c
 /******************************
 * READ THIS COMMENT *
@@ -50,6 +58,7 @@ You can also embellish comments to make them 'urgent'
 ```
 
 ## Actual Example of Using These
+
 ```c
 /* 
 This program adds two values and displays these results.
@@ -75,9 +84,11 @@ int main(void)
 ```
 
 ## Use of Comments
+
 * it's possible to insert too many comments. this can degrade the readability of the program.
 * use comments intelligently
 * insert comments while typing your code, so the logic is still fresh in your mind.
 * put comments on every line you think is confusing, or if you think the line is too complex.
 * comments help on debugging and finding out logic errors
-* 
+
+*
