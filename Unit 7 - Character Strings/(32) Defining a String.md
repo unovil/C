@@ -1,10 +1,10 @@
 # Character Strings
 
 - C has no special var type for strings
-  - there are no special oper. for processing strings
-  - however, stdlib has a range of functions for strings
+    - there are no special oper. for processing strings
+    - however, stdlib has a range of functions for strings
 - strings are stored in `char` array
-  - one character per one memory cell
+    - one character per one memory cell
 - to decleare, use `char` and `[]` to indicate size
 
 ```c
@@ -12,7 +12,7 @@ char Hello[20];
 ```
 
 - this variable can hold up to 19 char
-  - extra null character
+    - extra null character
 
 # Initializing a String
 
@@ -48,7 +48,7 @@ s = "hello"; // initialize, won't work ('lvalue required')
 ```
 
 - performing an assignment operation on an entire string requires `strncpy()`
-  - function in stdlib that assigns value of char array after declared or initialized
+    - function in stdlib that assigns value of char array after declared or initialized
 - u still can assign it element by element tho
 
 # Displaying a String
@@ -62,14 +62,14 @@ s = "hello"; // initialize, won't work ('lvalue required')
 - `%s` is used as format specifier
 - no need to put `&` (address-of oper.) on string
 - `scanf()` will **not** get all characters, rather the input *stops* after a space.
-  - better replacements are `gets()` and `fgets()`
+    - better replacements are `gets()` and `fgets()`
 
 # Testing if two strings are equal
 
 - you can't test if two strings are equal with a normal `==` oper.
 - `==` also won't work on structs and arrays
 - to determine if two strings are equal, compare the strings character by character
-  - you can use `strcmp()` for this
+    - you can use `strcmp()` for this
 
 ## **Reminder**
 
